@@ -1,0 +1,38 @@
+section.main-section
+  .wrapper
+    .main-section__container
+      .main-section__box
+        include ../components/header.pug
+        h1.main-section__title.font-w-bold-ital.font-s-44.text-up
+          | Откройте свой 
+          br.no-br
+          | кузовной автосервис 
+          br.no-br
+          | с надежным партнером
+        .main-section__sub-title
+          img.main-section__sub-title-img(src="images/main-section-sub-title-img.png" loading="lazy" width="54" height="78" alt="image")
+          .font-s-20
+            | Начните зарабатывать от 4,75 млн рублей в год 
+            br
+            | на услугах, обеспеченных высоким спросом
+        .main-section__text.font-w-bold-ital.font-s-24.text-up Получите подробный план открытия
+        form.main-section__form(data-feedback-form)
+          input.input.input--main(type="text" name="name" autocomplete="off" placeholder="Имя")
+          input.input.input--main(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+          button.btn(type="submit") Получить
+      .swiper-main
+        .main-section__cards.swiper-wrapper
+          .main-section__card.swiper-slide
+            .main-section__card-wrapper
+              .font-w-bold-ital.font-s-24.color-blue.main-card-skew 01
+              .font-s-18.main-card-skew Поддержка на всех этапах
+          .main-section__card.swiper-slide.main-card-2
+            .main-section__card-wrapper
+              .font-w-bold-ital.font-s-24.color-blue.main-card-skew 02
+              .font-s-18.main-card-skew Высокая рентабельность
+          .main-section__card.swiper-slide.main-card-3
+            .main-section__card-wrapper
+              .font-w-bold-ital.font-s-24.color-blue.main-card-skew 03
+              .font-s-18.main-card-skew Стабильная прибыль
+        .main-pagination.swiper-progress-main
+      img.main-section__img(src="images/main-section-img.png" loading="lazy" width="1728" height="2000" alt="image")

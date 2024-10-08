@@ -1,0 +1,71 @@
+.btn
+  height: 50px
+  width 100%
+  user-select: none
+  position: relative
+  display: flex;
+  justify-content: center
+  align-items: center
+  overflow: hidden
+  color: #FFFFFF
+  border-radius: 100px
+  // border: 3px solid #fff;
+  text-transform: uppercase
+  background: #0F45FF
+  font-family: 'SegoeUI-Regular'
+  font-weight: 400
+  font-size: 14px
+  line-height: 140%
+  transition transform 0.5s, top 0.8s
+  letter-spacing: 2.83px
+  +above($breakpoints.sm)
+    font-size: 14px;
+    height: 60px;
+  +above($breakpoints.md)
+    font-size: 15px;
+    height: 70px;
+  +above($breakpoints.xxl)
+    font-size: 16px;
+    height: 80px
+
+  &:hover
+    transform: scale(1.02)
+
+  &:active
+    top: 3px
+
+  &::before
+    content: ""
+    position: absolute
+    top: 0;
+    height: 100%;
+    width: 36px;
+    transform: skewX(-45deg)
+    left: -150%
+    pointer-events: none
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+    animation: flareAnimation 4s infinite ease-in;
+    vendord = official
+    @keyframes flareAnimation
+      0%
+          left: -150%
+      100% 
+          left: 250%
+
+  &--secondary
+    font-size: 11px;
+    +above($breakpoints.sm)
+      font-size: 10px;
+    +above($breakpoints.md)
+      font-size: 12px;
+    +above($breakpoints.xxl)
+      font-size: 14px;
+  &--city
+    font-size: 11px;
+    background: #000
+    +above($breakpoints.sm)
+      font-size: 10px;
+    +above($breakpoints.md)
+      font-size: 12px;
+    +above($breakpoints.xxl)
+      font-size: 14px;

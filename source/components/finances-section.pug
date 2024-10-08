@@ -1,0 +1,49 @@
+section.finances-section
+  .wrapper
+    .finances-section__container
+      img.finances-section__img(src="images/finances-section-img.png" loading="lazy" width="1104" height="736" alt="image")
+      h2.finances-section__title.font-w-bold-ital.font-s-44.text-up
+        | Франшиза KUZOVNOY №1 в цифрах
+
+      .finances-section__sub-title.font-s-18
+        | Сотрудничая с нами вы можете рассчитывать на:
+      .swiper-finances
+        .finances-section__cards.swiper-wrapper
+          .finances-section__card.swiper-slide
+            img.finances-section__card-icon(src="images/finances-section-card-icon-1.png" loading="lazy" width="80" height="80" alt="icon")
+            .finances-section__card-title.font-w-bold-ital.font-s-24.color-black.text-up 3 месяца
+            .font-s-18 чтобы начать <br> зарабатывать
+          .finances-section__card.swiper-slide
+            img.finances-section__card-icon(src="images/finances-section-card-icon-2.png" loading="lazy" width="80" height="80" alt="icon")
+            .finances-section__card-title.font-w-bold-ital.font-s-24.color-black.text-up 9 месяцев
+            .font-s-18 срок окупаемости <br> вашего бизнеса
+          .finances-section__card.swiper-slide
+            img.finances-section__card-icon(src="images/finances-section-card-icon-3.png" loading="lazy" width="80" height="80" alt="icon")
+            .finances-section__card-title.font-w-bold-ital.font-s-24.color-black.text-up от 16,3%
+            .font-s-18 рентабельность по <br> чистой прибыли
+          .finances-section__card.swiper-slide
+            img.finances-section__card-icon(src="images/finances-section-card-icon-4.png" loading="lazy" width="80" height="80" alt="icon")
+            .finances-section__card-title.font-w-bold-ital.font-s-24.color-black.text-up от 4,75 млн рублей
+            .font-s-18 средняя чистая <br> годовая прибыль
+          .finances-section__card.swiper-slide
+            img.finances-section__card-icon(src="images/finances-section-card-icon-5.png" loading="lazy" width="80" height="80" alt="icon")
+            .finances-section__card-title.font-w-bold-ital.font-s-24.color-black.text-up от 2,64 млн рублей
+            .font-s-18 первоначальные <br> инвестиции
+          .finances-section__card.swiper-slide
+            img.finances-section__card-icon(src="images/finances-section-card-icon-6.png" loading="lazy" width="80" height="80" alt="icon")
+            .finances-section__card-title.font-w-bold-ital.font-s-24.color-black.text-up от 397 000 рублей
+            .font-s-18 средняя чистая <br> ежемесячная прибыль
+        .finances-pagination.swiper-progress-finances
+      .finances-section__bottom
+        .font-s-18
+          | Ознакомьтесь детально с финансовыми 
+          br
+          | расчетами вашего будущего бизнеса
+        .font-w-bold-ital.font-s-44.text-up
+          | Скачайте финансовую 
+          br.no-br
+          | модель KUZOVNOY №1
+      form.finances-section__form(data-feedback-form)
+        input.input.input--secondary(type="text" name="name" autocomplete="off" placeholder="Имя")
+        input.input.input--secondary(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+        button.btn(type="submit") Скачать

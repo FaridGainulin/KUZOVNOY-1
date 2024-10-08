@@ -1,0 +1,96 @@
+.footer
+  background-color #393E40
+
+  &__container
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 10px
+    padding 7px 0
+    +above($breakpoints.sm)
+      flex-direction: row
+      justify-content space-between
+
+  &__block
+    +above($breakpoints.sm)
+      display: flex
+      align-items: center
+      gap: 10px
+    +above($breakpoints.md)
+      gap: 20px
+    +above($breakpoints.xxl)
+      gap: 33px
+
+  &__brand-text
+    display: none
+    +above($breakpoints.md)
+      display: block
+
+  &__logo
+    width 150px
+    height: auto
+    +above($breakpoints.sm)
+      width 200px
+    +above($breakpoints.md)
+      width 230px
+    +above($breakpoints.xxl)
+      width 247px
+
+  &__privacy
+    color: #759D40
+    cursor pointer
+    text-decoration: underline
+
+  &__connection-block
+    +above($breakpoints.sm)
+      display: flex
+      align-items: center
+      gap: 10px
+    +above($breakpoints.md)
+      gap: 15px
+    +above($breakpoints.xxl)
+      gap: 22px
+
+  &__connection
+    display: flex
+    align-items: center
+    justify-content center
+    gap: 5px
+    +above($breakpoints.sm)
+      gap: 8px
+    +above($breakpoints.md)
+      gap: 10px
+    +above($breakpoints.xxl)
+      gap: 14px
+
+  &__connection-icon
+    width 11px
+    height: 11px
+    +above($breakpoints.sm)
+      width 12px
+      height: 12px
+    +above($breakpoints.md)
+      width 13px
+      height: 13px
+    +above($breakpoints.xxl)
+      width 14px
+      height: 14px
+
+  &__call-me
+    display: none
+    +above($breakpoints.sm)
+      display: flex
+      justify-content center
+      align-items: center
+      border-radius: 4px
+      color: #fff
+      background: linear-gradient(90deg, #19aab9 0%, #0f838f 100%);
+      width 100px
+      height: 32px
+      cursor pointer
+    +above($breakpoints.md)
+      width 120px
+      height: 34px
+    +above($breakpoints.xxl)
+      width 136px
+      height: 36px

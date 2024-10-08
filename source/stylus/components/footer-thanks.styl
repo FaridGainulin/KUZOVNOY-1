@@ -1,0 +1,54 @@
+.footer-thanks
+  &__container
+    display: flex
+    align-items: center
+    flex-direction: column
+    gap: 10px
+    +above($breakpoints.sm)
+      gap: 0
+      flex-direction: row
+      justify-content space-between
+
+  &__brand
+    display: none
+    +above($breakpoints.sm)
+      display: block
+
+  &__logo
+    width 120px
+    height: auto
+    +above($breakpoints.sm)
+      width 100px
+    +above($breakpoints.md)
+      width 110px
+    +above($breakpoints.xxl)
+      width 123px
+
+  &__privacy
+    cursor pointer
+    text-decoration: underline
+
+  &__connection
+    display: flex
+    align-items: center
+    justify-content center
+    gap: 5px
+    +above($breakpoints.sm)
+      gap: 10px
+    +above($breakpoints.md)
+      gap: 16px
+    +above($breakpoints.xxl)
+      gap: 20px
+
+  &__connection-icon
+    width 12px
+    height: 12px
+    +above($breakpoints.sm)
+      width 16px
+      height: 16px
+    +above($breakpoints.md)
+      width 20px
+      height: 20px
+    +above($breakpoints.xxl)
+      width 24px
+      height: 24px
